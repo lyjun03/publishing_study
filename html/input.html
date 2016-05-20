@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- .io = input, output (입력, 출력을 할 수 있는 컨텐츠)
+    input
+
+    <input type="속성" />
+
+    속성 type 종류
+    text, password, radio, checkbox, button, submit, reset, file
+
+    text = 텍스트를 입력할수 있는 박스
+    password = 비밀번호칠때 사용
+    radio = 단일 선택 박스 (동의합니다, 동의하지않습니다.)
+    checkbox = 다중선택 ( 회원가입 중 취미에 많이 쓰임 )
+    labal
+
+    잘안쓰이는 속성
+    button = 범용
+    submit = 전송을 할때 사용
+    reset = 폼의내용 초기화할때 사용
+    file = 파일을 선택 및 업로드 할때 사용 (첨부파일)
+
+
+    <fieldset>
+        입력창에 들어갈때는 fieldset을 감싸는 게좋다
+    </fieldset>
+
+    <label for="">
+
+    </label>
+
+    output -->
+
+    <input type="text" /><br />
+    <input type="password" /><br />
+    <input type="radio" /> <br />
+    <input type="checkbox" /><br />
+    <input type="button" value="확인"/><br />
+    <input type="file" /><br />
+
+    <fieldset>
+        <legend>필수입력</legend>
+        <ul>
+            <li>
+                <label for="userId">아이디:</label>
+                <input type="text" id="userId" />
+            </li>
+
+            <li>
+            <input type="radio" id="agree"/><label for="agree">동의하십니까</label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>부가정보</legend>
+        <ul>
+            <li>
+            아이디: <input type="text" />
+            </li>
+
+            <li>
+            이름: <input type="text" />
+            </li>
+        </ul>
+    </fieldset>
+
+</body>
+</html>

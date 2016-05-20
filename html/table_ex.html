@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    /* table */
+    table {border-collapse:collapse; border-spacing: 0;}
+    th, td { border-collapse:collapse; vertical-align:middle;border-spacing: 0; }
+    legend, caption, hr { /*display:none;*/ }
+    table tr {height:50px;}
+    table tr td {padding:10px 10px;}
+    div { float:right; margin-top:10px;}
+    #adress{ width:460px; margin-top:10px;}
+    </style>
+</head>
+<body>
+    <h1>회원가입양식</h1>
+    <fieldset style="border:0;">
+        <legend>필수항목</legend>
+        <table border='1' width="100%">
+            <tbody>
+            <colgroup>
+                <col width="200" />
+                <col/>
+            </colgroup>
+                <tr>
+                    <th><label for="userId">아이디</label></th>
+                    <td><input type="text" id="userId" value="아이디"/></td>
+                </tr>
+                <tr>
+                    <th><label for="userPw">비밀번호</label></th>
+                    <td><input type="text" id="userPw" value=""/></td>
+                </tr>
+                <tr>
+                    <th><label for="userName">이름</label></th>
+                    <td><input type="text" id="userName" value=""/></td>
+                </tr>
+                <tr>
+                    <th><label for="useradrees">주소</label></th>
+                    <td>
+                        <input type="text" id="useradrees" value=""/>&nbsp;-&nbsp;<input type="text" id="useradrees" value=""/>&nbsp;<input type="button" value="우편번호찾기" /><br/>
+                        <input type="text" value="나머지주소입력" id="adress" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="userPhon">핸드폰</label></th>
+                    <td>
+                        <select>
+                            <option>선택하세요</option>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>017</option>
+                            <option>018</option>
+                        </select>
+                        &nbsp; - &nbsp; <input type="text"  />&nbsp; - &nbsp;<input type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="man">성별</label></th>
+                    <td>
+                        <input type="radio" id="man" value="" name="sex"/><label for="man">남자</label>
+                        <input type="radio" id="women" value="" name="sex"/><label for="women">여자</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="a1">취미</label></th>
+                    <td>
+                        <input type="checkbox" id="a1" value="" name=""/><label for="a1">영화</label>
+                        <input type="checkbox" id="a2" value="" name=""/><label for="a2">스포츠</label>
+                        <input type="checkbox" id="a3" value="" name=""/><label for="a3">산책</label>
+                        <input type="checkbox" id="a4" value="" name=""/><label for="a4">음악</label>
+                        <input type="checkbox" id="a5" value="" name=""/><label for="a5">독서</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="fileload">첨부파일</label></th>
+                    <td>
+                        <input type="file" id="fileload" value="" name=""/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <input type="submit" value="확인">
+            <input type="button" value="취소">
+            <input type="reset" value="리셋">
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

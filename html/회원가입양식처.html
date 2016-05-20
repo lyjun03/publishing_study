@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>회원가입양식처</h1>
+    <form action="./">
+        <fieldset>
+            <legend>필수입력</legend>
+            <ul>
+                <li style="margin-top:20px;">
+                    <label for="userId">
+                    <input type="text" id="userId" name="username"placeholder="아이디"/></label>
+                </li>
+                <li style="margin-top:20px;">
+                    <label for="userPw">비밀번호</label>
+                    <input type="password" name="pw" id="userPw" value=""/>
+                </li>
+                <li style="margin-top:20px;">
+                    <label for="bisexuality">성별</label>
+                    <input type="radio" name="sex" id="man" value=""/><label for="man">남자</label>
+                    <input type="radio" name="sex" id="women" value=""/><label for="women">여자</label>
+                    <input type="radio"name="sex" id="bisexuality" value=""/><label for="bisexuality">남자</label>
+                </li>
+                <li style="margin-top:20px;">
+                    <label for="a1">결혼여부</label>
+                    <input type="checkbox" id="a1" value=""/><label for="a1">미혼</label>
+                    <input type="checkbox" id="a2" value=""/><label for="a2">기혼</label>
+                    <input type="checkbox" id="a3" value=""/><label for="a3">앞으로 예정</label>
+                    <input type="checkbox" id="a4" value=""/><label for="a4">못갈거 같은대</label>
+                    <input type="checkbox" id="a5" value=""/><label for="a5">중혼</label>
+                </li>
+                <li style="margin-top:20px;">
+                    <label for="uesrPhoto">사진업로드</label>
+                    <input type="file" id="uesrPhoto" />
+                </li>
+                <li style="margin-top:20px;">
+                    <input type="button" value="취소">
+                    <input type="submit" value="전송">
+                    <input type="reset" value="초기화">
+                </li>
+            </ul>
+        </fiedset>
+    </form>
+
+</body>
+</html>
