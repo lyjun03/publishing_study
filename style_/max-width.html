@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box { border:1px solid #ff0000; min-width:500px; min-height:200px}
+        .box_1 { border:1px solid #ff0000; max-width:300px; max-height:200px}
+        /*
+        min-width:1000px 1000px 이하로는 줄지 않는다
+        max-width:1000px 1000px 이상만큼 늘어나지 않는다
+
+        min-height:200px min은 200px 이상으로도 늘어날 수 있다
+        max-height:200px max는 200px 이상으로 늘어나지 않는다
+         */
+    </style>
+</head>
+<body>
+    <!-- min-width min-height -->
+    <div class="box">
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        200px 박스안에 마지막 텍스트<br/>
+        min-height가 적용후 200px 이상으로 컨텐츠 크기에 맞춰 늘어넘<br/>
+        min-height가 적용후 200px 이상으로 컨텐츠 크기에 맞춰 늘어넘<br/>
+    </div>
+    <br /><br />
+    <!-- max-width max-height -->
+    <div class="box_1">
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        text<br/>
+        200px 박스안에 마지막 텍스트<br/>
+        max-height가 적용후 200px 이상은 늘어나지않고 컨텐츠가 밖으로 나간다<br/>
+    </div>
+</body>
+</html>

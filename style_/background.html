@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background</title>
+    <style>
+        .boxcolor { border:1px solid #ff0000; height:500px; background-color:green; }
+        .boximage { border:1px solid #ff0000; height:500px; background-image:url('../images/s_img.jpg'); background-repeat:no-repeat; background-position:left;}
+        .boximage_1 { border:1px solid #ff0000; height:500px; background:url('../images/s_img.jpg') no-repeat center;}
+        .bgsize {border:1px solid #ff0000; height:2000px; background:url('../images/s_img.jpg'); background-size:cover; background-attachment:fixed;}
+
+    </style>
+</head>
+<body>
+    <!--
+        background
+        background-image
+        background-color
+        background-postion 이미지한태만 적용이 된다.
+        background-repeat
+        - repeat기본값 반복 repeat-x 가로로 반복, repeat-y 세로로 반복, no-repeat 반복 없음
+        background-size
+        - contain , cover
+        background-attachment 배경을 고정
+     -->
+    <div class="boxcolor">
+        <!--<img src="../images/s_img.jpg" alt="이미지" />-->
+    </div>
+    <br />
+    <div class="boximage">
+
+    </div>
+    <br />
+    <div class="boximage_1">
+
+    </div>
+    <br />
+    <div class="bgsize">
+
+    </div>
+
+</body>
+</html>

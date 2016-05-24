@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/basis.css">
+    <style>
+        html,body { height:100%; }
+        *{margin:0; padding:0;}
+        div {height:100%; background-size:cover; background-attachment:fixed; background-position:center;}
+        #wrap { width:auto;}
+        .topmenu {position:fixed;}
+        .topmenu ul li a { color:#fff; }
+        .topmenu ul { margin-top:500px; margin-left:20px; }
+        .topmenu ul li { width:100%; text-align:right; height:25px; font-size:14px; }
+        .topmenu ul li:hover .round { background:#fff; }
+
+
+        .round_t{ display:block; float:left; display:none; margin-left:10px; }
+        .round {width:10px; height:10px; display:block; border:1px solid #fff; border-radius:50%; }
+
+        #bg_1 { background-image:url('../images/1.jpg');  }
+        #bg_2 { background-image:url('../images/2.jpg'); }
+        #bg_3 { background-image:url('../images/3.jpg'); }
+        #bg_4 { background-image:url('../images/4.jpg'); }
+        #bg_5 { background-image:url('../images/5.jpg'); }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="topmenu">
+            <ul>
+                <li>
+                    <a href="#bg_1"><span class="round"></span><span class="round_t">menu1</span></a>
+                </li>
+                <li>
+                    <a href="#bg_2"><span class="round"></span><span class="round_t">menu1</span></a>
+                </li>
+                <li>
+                    <a href="#bg_3"><span class="round"></span><span class="round_t">menu1</span></a>
+                </li>
+                <li>
+                    <a href="#bg_4"><span class="round"></span><span class="round_t">menu1</span></a>
+                </li>
+                <li>
+                    <a href="#bg_5"><span class="round"></span><span class="round_t">menu1</span></a>
+                </li>
+            </ul>
+        </div>
+        <div id="bg_1"></div>
+        <div id="bg_2"></div>
+        <div id="bg_3"></div>
+        <div id="bg_4"></div>
+        <div id="bg_5"></div>
+    </div>
+</body>
+</html>

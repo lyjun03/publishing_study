@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.-John3:16- */
+
+
+/*Common*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@font-face {
+ font-family: 'Nanum Gothic'; font-style: normal;
+ src: url('/fonts/NanumGothic.eot');
+ src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),
+ url('../fonts/NanumGothic.woff') format('woff'),
+ url('../fonts/NanumGothic.ttf') format('truetype');
+ }
+
+body,input,select,textarea,td,th,p,div,h1,h2,h3,h4,h5,h6,ul,li,dt,dd,a,span,form, label,strong,small,table
+{font-family:'Nanum Gothic','����-����','����-����',����,Arial,verdana,sans-serif; line-height:1.5em; vertical-align: baseline;}
+body,h1,h2,h3,h4,h5,h6,p,ul,li,dt,dl,a,img, input, table, td, tr, th{margin:0; padding:0;}
+a{text-decoration:none; color:inherit; display:inline-block;  cursor:pointer;}
+a:link, a:visited, a:active{text-decoration:none;}
+ul, dl{list-style:none;}
+img, input, select{border:none; vertical-align:middle;}
+
+.clearfix{zoom:1}
+.clearfix:after{clear:both; display:block; content:""; height:0px; visibility:hidden;}
+.ellipsis{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+/* table */
+table {border-collapse:collapse; border-spacing: 0;}
+th, td { border-collapse:collapse; vertical-align:middle;border-spacing: 0; }
+legend, caption, hr { /*display:none;*/ }
+
+/* font */
+i, em, u, cite { font-style:normal; }
+
+/* form */
+form, fieldset { display:inline; }
+textarea{vertical-align:top; text-align:left; border:none;}
+fieldset, blockquote, iframe, button{ border:none; }
+@font-face {
+   font-family: 'Nanum Barun Gothic';
+   font-style: normal;
+   src: url(../fonts/NanumBarunGothic.eot);
+   src: url(../fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/NanumBarunGothic.woff2) format('woff2'),
+        url(../fonts/NanumBarunGothic.woff) format('woff'),
+        url(../fonts/NanumBarunGothic.ttf) format('truetype');
+ }
+@font-face {
+ font-family: 'Nanum Myeongjo';
+ font-style: normal;
+ src:url(../fonts/NanumMyeongjo-Regular.eot);
+ src: url('../fonts/NanumMyeongjo-Regular.eot') format('embedded-opentype'),
+ url('../fonts/NanumMyeongjo-Regular.woff') format('woff'),
+ url('../fonts/NanumMyeongjo-Regular.ttf') format('truetype');
+}
