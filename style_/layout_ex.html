@@ -8,8 +8,10 @@
     <style>
         ul {margin:0; padding:0; list-style:none;}
         div { border:1px solid #f00; }
-        .top { height:80px;}
-        .logo { width:200px; height:80px; float:left; overflow:hidden; }
+        .top { height:80px;  }
+        .logo { width:200px; height:80px; float:left; overflow:hidden; position:relative;}
+        .logo p { position:absolute; top:15px; left:80px;  }
+        /*.logo img { width:100%; }*/
         .menu { height:80px; margin-left:210px; position:relative; }
         .menu ul {  position:absolute; top:30px; left:50px; }
         .menu ul li {float:left; width:80px; font-size:12px;  }
@@ -39,7 +41,8 @@
     
     <div class="top">
         <div class="logo">
-            <img src="../images/1.jpg" alt="로고" />
+            <p>로고</p>
+            <!--<img src="../images/1.jpg" alt="로고" />-->
         </div>
         <div class="menu">
             <ul>
