@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>layout ex</title>
+    
+    <style>
+        ul {margin:0; padding:0; list-style:none;}
+        div { border:1px solid #f00; }
+        .top { height:80px;}
+        .logo { width:200px; height:80px; float:left; overflow:hidden; }
+        .menu { height:80px; margin-left:210px; position:relative; }
+        .menu ul {  position:absolute; top:30px; left:50px; }
+        .menu ul li {float:left; width:80px; font-size:12px;  }
+        
+        .contents { height:500px;  margin-top:10px;  }
+        .banner1 {  width:200px; height:500px; float:left;}
+        .banner1_1 { width:200px; height:250px; }
+        .banner1_2 { width:200px; height:250px; }
+        
+        .banner2 {  width:200px; height:500px; float:right;}
+        .banner2_1 { width:100px; height:200px; float:left;}
+        .banner2_2 { margin-left:100px; height:200px;}
+        .banner2_3 {  width:200px; height:100px; }
+        
+        .banner3 { margin:0px 210px; height:500px; }
+        .banner3_1 { height:200px; float:left; width:50%; }
+        .banner3_2 { height:200px; margin-left:51%; }
+        .banner3_3 { height:200px; float:right; width:100%; }
+       
+        
+        .footer { height:80px; margin-top:10px; }
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="top">
+        <div class="logo">
+            <img src="../images/1.jpg" alt="로고" />
+        </div>
+        <div class="menu">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        
+        </div>
+    </div>
+    <!-- top menu end -->
+    
+    <div class="contents">
+        
+        <div class="banner1">
+            <div class="banner1_1">
+                banner1_1
+            </div>
+            
+            <div class="banner1_2">
+                banner1_2
+            </div>
+        </div>
+        <!-- banner1 end-->
+        
+        <div class="banner2">
+            <div class="banner2_1">banner2_1</div>
+            <div class="banner2_2">banner2_2</div>
+            <div class="banner2_3">banner2_3</div>
+        </div>
+        <!-- banner2 end-->
+        
+        <div class="banner3">
+             <div class="banner3_1">banner3_1</div>
+            <div class="banner3_2">banner3_2</div>
+            <div class="banner3_3">banner3_3</div>
+        </div>
+        <!-- banner3 end-->
+        
+    </div>
+     <!--contents end -->
+     
+    <div class="footer">
+        
+    </div>
+    <!-- footer end -->
+</body>
+</html>
