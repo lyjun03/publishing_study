@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout_1</title>
+     
+    <style type="text/css">
+    
+        /*dl;sintrdo_titl*/
+        *{margin:0; padding:0;}
+        ol,li { list-style:none; }
+        .wrap {
+            margin:0 auto;
+            width:900px;
+            height:540px;
+            outline:1px solid #f00; }
+        
+        .header {
+            padding:20px 0px 33px ;
+            height:54px;
+            margin:0 30px 15px;
+            border-bottom:2px solid #000;
+        }
+        .content{
+            outline:1px solid #f00;
+            margin:0 30px;
+            height:385px;
+        }
+        
+        .content .lc {
+            outline:1px solid #f00;
+            width:503px;
+            height:100%;
+            float:left;
+        }
+        .content .lc .top_article{
+            outline:1px solid #f00;
+            height:110px;
+            margin-bottom:10px;
+        }
+        .lc .top_article ul{border:1px #00F solid;}
+        .lc .top_article ul li { margin-left:150px;}
+        .lc .top_article ul li.firstli {margin-left:0; margin-bottom:10px;}
+        .lc .top_article ul li.firstli strong{display:block;}
+        .lc .top_article ul li.firstli span{font-size:12px; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
+        .lc .top_article ul li.firstli img{float:left; margin-right:10px;}
+        
+        .content .lc .bottom_article{
+            height:266px;
+            outline:1px solid #f00;
+        }
+        
+        .content .rc{
+            outline:1px solid #f00;
+            margin-left:513px;  
+            height:100%;
+        }
+        .content .rc_top {
+            height:188px;
+            outline:1px solid #f00;
+        }
+        .content .rc_top_left{
+            width:50%;
+            outline:1px solid #f00;
+            height:100%;
+            float:left;
+        }
+        .content .rc_top_right{
+            margin-left:50%;
+            outline:1px solid #f00;
+            height:100%;
+        }
+        
+        .content .rc_bottom{
+            height:133px;
+            outline:1px solid #f00;
+            margin:27px 0 0;
+        }
+        .content .rc_promotion{
+            height:37px;
+            outline:1px solid #f00;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    
+    <div class="wrap">
+        <div class="header">
+            
+        </div>
+        
+        <div class="content">
+            <div class="lc">
+                <div class="top_article">
+                    <ul>
+                        <li class="firstli">
+                            <img src="http://static.naver.net/newsstand/2016/0526/inews/154711/001.jpg" alt=""/>
+                            <strong>삼성 "퀀텀닷, 차세대 TV 화질 역사쓸 것"</strong>
+                            <span>장혁 삼성전자 종합기술원 부사장 '국제 퀀텀닷 컨퍼런스' 기조연설 나서</span>
+                        </li>
+                        <li><a href="#">김현석 삼성전자 "퀀텀닷 TV, OLED 앞선다"</a></li>
+                        <li><a href="#">삼성전자, 멕시코서 '퀀텀닷 기술 세미나'..</a></li>
+                    </ul>
+                    
+                    
+                </div>
+                <div class="bottom_article"></div>
+            </div>
+            <div class="rc">
+                <div class="rc_top">
+                    <div class="rc_top_left"></div>
+                    <div class="rc_top_right"></div>
+                </div>
+                <div class="rc_bottom"></div>
+                <div class="rc_promotion"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>
