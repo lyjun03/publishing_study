@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout_ex</title>
+    <style>
+        *{ margin:0; padding:0; list-style:none; }
+        .wrap { outline:1px solid #f00; width:890px; height:560px;  margin:20px auto 0; }
+        .header{border-bottom:3px solid #666; margin:0px 25px 20px; height:55px; padding:20px 0 33px; }
+        .top_left { outline:1px solid #f00; width:260px; height:55px; float:left; }
+        .top_right{ width:468px; height:60px; outline:1px solid #f00; float:right; }
+        .top_left_1{ width:268px; height:22px; outline:1px solid #f00; clear:left; }
+        
+        .content {width:840px; height:380px; outline:1px solid #f00; margin:0px 25px;}
+        .content_left { width:630px; height:380px; margin-right:15px;  float:left;  }
+        .content_left_top{width:630px; height:150px; margin-bottom:15px }
+        .content_left_center { width:630px; height:200px; border-top:1px solid #eee; padding-top:15px; margin-top:15px;   }
+        
+        .content_right { width:180px; height:380px; padding-left:14px;  border-left:1px solid #eee; float:right; }
+        .c_l_c_l { width:300px; height:207px; padding-right:14px; border-right:1px solid #eee; float:left; }
+        .c_l_c_r { width:300px; height:207px; margin-left:15px; outline:1px solid #f00; float:right; }
+    </style>
+    
+</head>
+<body>
+    <div class="wrap">
+        
+        <div class="header">
+            <div class="top_left"></div>
+            <div class="top_right"></div>
+            <div class="top_left_1"></div>
+            
+        </div>
+        
+        <div class="content">
+            <div class="content_left">
+                <div class="content_left_top"></div>
+                <div class="content_left_center">
+                    <div class="c_l_c_l"></div>
+                    <div class="c_l_c_r"></div>
+                </div>
+            </div>
+            <div class="content_right"></div>
+            
+        </div>
+    </div>
+</body>
+</html>
