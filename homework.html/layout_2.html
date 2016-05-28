@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>충청일보</title>
+    <style>
+        *{margin:0; padding:0; list-style:none;}
+        ul,li,dl {margin:0; padding:0; }
+        .wrap { margin:20px auto 0; outline:1px solid #f00; width:900px; height:540px }
+        
+        .header { margin:0 30px 20px; width:840px; height:55px; padding:20px 0 33px; border-bottom:3px solid #666; }
+        .header .h_left { float:left; width:260px; height:55px; outline:1px solid #f00;}
+        .header .h_right { float:right; width:468px; height:60px; outline:1px solid #f00; }
+        .header .h_center {clear:left; width:264px; height:22px; outline:1px solid #f00;}
+        
+        .content { outline:1px solid #f00; width:840px; height:380px; margin:0 30px;}
+        .content .c_left { outline:1px solid #f00; width:569px; height:380px; float:left; }
+        .c_left .top_news { outline:1px solid #f00; width:569px; height:160px; border-bottom:1px solid #666; }
+        .top_news ul { outline:1px solid #f00; width:569px; height:140px;}
+        .top_news ul .news_img{ width:210px; margin-right:13px; height:140px; outline:1px solid #f00; float:left;}
+        .top_news ul .news_content { width:330px; margin-left:223px; outline:1px solid #f00; height:140px; }
+        .news_content dl dt{ width:330px; height:24px; padding-top:7px; outline:1px solid #f00; }
+        .news_content dl .sub_title { width:328px; padding:4px 1px 0; outline:1px solid #f00; height:15px;  }
+        .news_content dl .sub_content { width:326px; padding:10px 2px 0; outline:1px solid #f00; height:80px; }
+        .left_news { float:left; width:329px; height:204px; margin-top:15px; outline:1px solid #f00;  }
+        .left_news ul li{ width:320px; height:18px; padding:8px 0; outline:1px solid #f00; }
+        .right_news { width:240px; height:220px; outline:1px solid #f00; float:right;}
+        
+        .content .c_right { width:270px; height:380px; border-left:1px solid #666;  float:right; }
+        .c_right ul { width:251px; height:380px; margin-left:20px;}
+        .c_right li{width:251px; height:60px; margin-top:20px; outline:1px solid #f00; margin-right:10px;  }
+        .c_right li:first-child {margin-top:0px;}
+        .c_right li dt {float:left; outline:1px solid #f00; width:90px; height:60px; }
+        .c_right li dl .news_title { width:151px; height:18px; padding-top:2px; outline:1px solid #f00; float:right;}
+        .c_right li dl .news_content { width:151px; height:38px; padding-top:2px; outline:1px solid #f00; float:right;}
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="h_left"></div>
+            <div class="h_right"> </div>
+            <div class="h_center"></div>
+        </div>
+        <div class="content">
+            <div class="c_left">
+                <div class="top_news">
+                    <ul>
+                        <li class="news_img"></li>
+                        <li class="news_content">
+                            <dl>
+                                <dt></dt>
+                                <dd class="sub_title"></dd>
+                                <dd class="sub_content"></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left_news">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="right_news"></div>
+            </div>
+            <div class="c_right">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt></dt>
+                            <dd class="news_title"></dd>
+                            <dd class="news_content"></dd>
+                        </dl>
+                    </li>
+                    <li>
+                         <dl>
+                            <dt></dt>
+                            <dd class="news_title"></dd>
+                            <dd class="news_content"></dd>
+                        </dl>
+                    </li>
+                    <li>
+                         <dl>
+                            <dt></dt>
+                            <dd class="news_title"></dd>
+                            <dd class="news_content"></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt></dt>
+                            <dd class="news_title"></dd>
+                            <dd class="news_content"></dd>
+                        </dl>
+                    </li>
+                    <li>
+                         <dl>
+                            <dt></dt>
+                            <dd class="news_title"></dd>
+                            <dd class="news_content"></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
