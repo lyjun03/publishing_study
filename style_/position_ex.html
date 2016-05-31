@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{ margin:0px; padding:0px; list-style:none; }
+        .wrap { outline:1px solid #f00; width:900px; height:540px; margin:0 auto; position:relative;  }
+        
+        .header { border-bottom:3px solid #f00; width:840px; height:55px; padding:20px 0 33px; position:absolute; left:30px;  }
+        .h_left { outline:1px solid #f00; width:260px; height:55px; position:absolute; left:0;}
+        .h_right { outline:1px solid #f00; width:468px; height:60px; position:absolute; right:0px; }
+        .h_left_1 { outline:1px solid #f00; width:264px; height:22px; position:absolute; left:0; top:75px; }
+        
+        .content { outline:1px solid #f00; width:840px; height:380px; position:absolute; left:30px; bottom:30px; }
+        .content .left_news { outline:1px solid #f00; width:606px; height:380px; position:absolute; left:0; }
+        .left_news .left_top_news { width:606px; height:238px; outline:1px solid #f00; position:absolute; left:0; top:0; }
+        .left_top_news ul {width:606px; height:238px; }
+        .left_top_news ul li.firstli { width:360px; height:238px; outline:1px solid #f00; position:absolute; left:0; top:0; }
+        .left_top_news ul li.towli { width:115px; height:114px; position:absolute; left:364px; outline:1px solid #f00; }
+        .left_top_news ul li.threeli { width:115px; height:114px; position:absolute; right:8px; outline:1px solid #f00; }
+        .left_top_news ul li.fourli { width:115px; height:114px; position:absolute; left:364px; bottom:0px; outline:1px solid #f00; }
+        .left_top_news ul li.fiveli { width:115px; height:114px; position:absolute; right:8px; bottom:0px; outline:1px solid #f00; }
+        .left_news .left_bottom_news { width:606px; height:114px; position:absolute; bottom:0px; outline:1px solid #f00; }
+        
+        .content .right_news { outline:1px solid #f00; width:220px; height:380px; position:absolute; right:0; }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="h_left"></div>
+            <div class="h_right"></div>
+            <div class="h_left_1"></div>
+        </div>
+        <div class="content">
+            <div class="left_news">
+                <div class="left_top_news">
+                    <ul>
+                        <li class="firstli"></li>
+                        <li class="towli"></li>
+                        <li class="threeli"></li>
+                        <li class="fourli"></li>
+                        <li class="fiveli"></li>
+                    </ul>
+                </div>
+                <div class="left_bottom_news"></div>
+            </div>
+            <div class="right_news"></div>
+        </div>
+    </div>
+</body>
+</html>

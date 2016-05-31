@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style type="text/css">
+        *{ margin:0px; padding:0px; list-style:none; }
+            /*.box1 { width:200px; height:200px; position:relative; top:50px; left:50px; border:1px solid #f00; }*/
+            /*.box2 { width:200px; height:200px; position:relative; bottom:50px; right:50px; border:1px solid #333; }*/
+            .box {position:absolute; background-size:cover; background-position:center; -webkit-background-size: cover;  }
+            .box1 {  left:0; right:50%; top:0; bottom:50%; background-image:url('../images/1.jpg'); }
+            .box2 { left:50%; right:0; top:0; bottom:50%; background-image:url('../images/2.jpg'); }
+            .box3 { left:0; right:50%; top:50%; bottom:0; background-image:url('../images/3.jpg'); } 
+            .box4 { left:50%; right:0; top:50%; bottom:0; background-image:url('../images/4.jpg'); }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+    
+    relative = 상대적으로 움직인다
+    absolute = 절대적으로 z
+    
+    .-->
+    
+    <!--<div class="box1">
+        <img src="https://www.google.co.kr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" />
+    </div>
+     <div class="box2"></div>-->
+     <div class="box1 box"></div>
+     <div class="box2 box"></div>
+     <div class="box3 box"></div>
+     <div class="box4 box"></div>
+     
+</body>
+</html>
