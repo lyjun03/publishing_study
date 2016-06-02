@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout</title>
+    <style>
+        * { margin:0px; padding:0px; list-style:none; }
+        body { background-image:url('../images/bg_img.png');}
+        .wrap{ width:auto; margin:0 auto;  }
+        
+        .header { width:auto; height:56px; background-image:url(../images/nav_bg.png); background-repeat:repeat-x; padding-top:5px; position:relative; }
+        .header .left { position:absolute; left:0; margin-left:10px; }
+        h1.logo {width:118px; height:30px; display:inline-block; background-image:url('../images/btn_img.png'); background-position:1px -81px; background-repeat:no-repeat;  text-indent:-9999px;}
+        .logo_sub { width:276px; height:30px; display:inline-block; background-image:url('../images/btn_img.png'); background-position: -113px -85px;  text-indent:-9999px; overflow:hidden; }
+        
+        
+        .header .right { position:absolute; right:9px; height:30px; width:auto; }
+        .right .right_1 { float:left;  }
+        .right_1 ul li{ padding:2.5px 7px 0 0; float:left;}
+        .right_1 ul li spna a{width:16px; height:16px; padding:7px 9px 5px;}
+        .right_1 ul li span.menuicon{width:16px; height:16px; background-image:url('../images/btn_img_1.png'); background-position: -200px -120px;  text-indent:-9999px; overflow:hidden; display:inline-block; margin-top:4px; }
+        
+        .right .right_2 { float:right; }
+        .right_2 .right2_line {width:2px; height:20px; background-image:url('../images/btn_img.png'); background-position: -244px -145px;  text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .right_2 a.right_2_2 { width:62px; height:21px; background-image:url('../images/btn_img.png'); background-position: -255px -145px;  text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .right_2 a.right_2_3 { width:46px; height:21px; background-image:url('../images/btn_img.png'); background-position: -333px -145px;  text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .right_2 a.right_2_4 { width:60px; height:21px; background-image:url('../images/btn_img.png'); background-position: -541px -267px;  text-indent:-9999px; overflow:hidden; display:inline-block; }
+        
+        
+        .header .center {width:174px; height:30px; position:absolute; left:50%; margin-left:-87px; }
+        .center .mynews { width:87px; height:30px; background-image:url('../images/btn_img.png'); background-position:-1px -116px; text-indent:-9999px; overflow:hidden; display:inline-block; float:left; }
+        .center .alltap { width:87px; height:30px; background-image:url('../images/btn_img.png'); background-position:-88px -150px; text-indent:-9999px; overflow:hidden; display:inline-block; float:left; }
+        
+        .content { width:auto; height:auto; position:relative; width:auto; height:849px; }
+        .content_title {width:0px; height:0px; overflow:hidden;}
+        .content .tapmenu { position:absolute; top;0px; height:28px;  width:100%; }
+        .tapmenu ul { margin:0px auto; width:500px; height:24px;}
+        .tapmenu ul.list_tap_menu li { float:left; display:list-item;}
+        .list_tap_menu li.ct1 { width:72px; height:24px; background-image:url('../images/btn_img.png'); background-position:-100px -252px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct1 a{ cursor:auto; }
+        .list_tap_menu li.ct2 { width:68px; height:24px; background-image:url('../images/btn_img.png'); background-position:-1px -278px; text-indent:-9999px; overflow:hidden; display:inline-block; display:block;}
+        .list_tap_menu li.ct3 { width:68px; height:24px; background-image:url('../images/btn_img.png'); background-position:-93px -304px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct4 { width:32px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -382px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct5 { width:52px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -330px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct6 { width:79px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -408px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct7 { width:89px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -434px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct8 { width:40px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -460px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        
+        .footer {width:auto; height:81px; background-image:url('../images/footer_bg.png'); background-repeat:repeat-x;}
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="left">
+                <a href="#"><h1 class="logo">뉴스스탠드</h1></a><p class="logo_sub">뉴스스탠드 기사는 각 언론사에서 직접 편집합니다.</p>
+            </div>  
+            
+            <div class="right">
+                <div class="right_1">
+                    <ul>
+                        <li><button type="submit">로그인</button></li>
+                        <li><a href="#"><span class="menuicon"></span></a></li>
+                    </ul>
+                </div>
+                <div class="right_2">
+                    <span class="right2_line">|</span>
+                    <a href="#" class="right_2_2">새로고침</a>
+                    <span class="right2_line">|</span>
+                    <a href="#" class="right_2_3">설정</a>
+                    <span class="right2_line">|</span>
+                    <a href="#" class="right_2_4">naver</a>
+                </div>
+            </div>
+            
+            <div class="center">
+                <a href="#" class="mynews">my news</a>
+               <strong><a href="#" class="alltap">alltap</a></strong>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h2 class="content_title">종합/경제</h2>
+            <div class="tapmenu">
+                <ul class="list_tap_menu">
+                    <li class="ct1">
+                        <a href="#">주요얼론사</a>
+                    </li>
+                    <li class="ct2">
+                        <a href="#">종합/경제</a>
+                    </li>
+                    <li class="ct3">
+                        <a href="#">방송통신</a>
+                    </li>
+                    <li class="ct4">
+                        <a href="#">IT</a>
+                    </li>
+                    <li class="ct5">
+                        <a href="#">영자지</a>
+                    </li>
+                    <li class="ct6">
+                        <a href="#">스포츠연예</a>
+                    </li>
+                    <li class="ct7">
+                        <a href="#">매거진/전문진</a>
+                    </li>
+                    <li class="ct8">
+                        <a href="#">지역</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
