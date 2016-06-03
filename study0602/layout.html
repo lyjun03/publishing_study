@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>layout</title>
+    <link rel="stylesheet" href="../css/basis.css" type="text/css" />
     <style>
-        * { margin:0px; padding:0px; list-style:none; }
+        * { margin:0px; padding:0px; list-style:none; font-family:Dotum, Verdana, Arial, sans-serif;}
+        ul, li{margin:0px; padding:0px;}
+        img { vertical-align:top; }
+        a {text-decoration:none; color:inherit;}
         body { background-image:url('../images/bg_img.png');}
         .wrap{ width:auto; margin:0 auto;  }
         
@@ -31,22 +35,109 @@
         .center .mynews { width:87px; height:30px; background-image:url('../images/btn_img.png'); background-position:-1px -116px; text-indent:-9999px; overflow:hidden; display:inline-block; float:left; }
         .center .alltap { width:87px; height:30px; background-image:url('../images/btn_img.png'); background-position:-88px -150px; text-indent:-9999px; overflow:hidden; display:inline-block; float:left; }
         
-        .content { width:auto; height:auto; position:relative; width:auto; height:849px; }
+        .content { position:relative; width:auto; height:849px; }
         .content_title {width:0px; height:0px; overflow:hidden;}
+        
         .content .tapmenu { position:absolute; top;0px; height:28px;  width:100%; }
         .tapmenu ul { margin:0px auto; width:500px; height:24px;}
         .tapmenu ul.list_tap_menu li { float:left; display:list-item;}
-        .list_tap_menu li.ct1 { width:72px; height:24px; background-image:url('../images/btn_img.png'); background-position:-100px -252px; text-indent:-9999px; overflow:hidden; display:inline-block; }
-        .list_tap_menu li.ct1 a{ cursor:auto; }
-        .list_tap_menu li.ct2 { width:68px; height:24px; background-image:url('../images/btn_img.png'); background-position:-1px -278px; text-indent:-9999px; overflow:hidden; display:inline-block; display:block;}
-        .list_tap_menu li.ct3 { width:68px; height:24px; background-image:url('../images/btn_img.png'); background-position:-93px -304px; text-indent:-9999px; overflow:hidden; display:inline-block; }
-        .list_tap_menu li.ct4 { width:32px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -382px; text-indent:-9999px; overflow:hidden; display:inline-block; }
-        .list_tap_menu li.ct5 { width:52px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -330px; text-indent:-9999px; overflow:hidden; display:inline-block; }
-        .list_tap_menu li.ct6 { width:79px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -408px; text-indent:-9999px; overflow:hidden; display:inline-block; }
-        .list_tap_menu li.ct7 { width:89px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -434px; text-indent:-9999px; overflow:hidden; display:inline-block; }
-        .list_tap_menu li.ct8 { width:40px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -460px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li a{ cursor:auto; display:block;}
         
-        .footer {width:auto; height:81px; background-image:url('../images/footer_bg.png'); background-repeat:repeat-x;}
+        .list_tap_menu li.ct1 { width:72px; height:24px; background-image:url('../images/btn_img.png'); background-position:-100px -252px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct1:hover { background-image:url('../images/btn_img.png'); background-position:-189px -252px; }
+        
+        .list_tap_menu li.ct2 { width:68px; height:24px; background-image:url('../images/btn_img.png'); background-position:-1px -278px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        
+        .list_tap_menu li.ct3 { width:68px; height:24px; background-image:url('../images/btn_img.png'); background-position:-93px -304px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct3:hover {background-image:url('../images/btn_img.png'); background-position:-182px -304px; }
+        
+        .list_tap_menu li.ct4 { width:32px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -382px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct4:hover {background-image:url('../images/btn_img.png'); background-position:-184px -382px;  }
+        
+        .list_tap_menu li.ct5 { width:52px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -330px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct5:hover {background-image:url('../images/btn_img.png'); background-position:-184px -330px;  }
+        
+        .list_tap_menu li.ct6 { width:79px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -408px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct6:hover {background-image:url('../images/btn_img.png'); background-position:-184px -408px;  }
+        
+        .list_tap_menu li.ct7 { width:89px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -434px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct7:hover {background-image:url('../images/btn_img.png'); background-position:-184px -434px;  }
+        
+        .list_tap_menu li.ct8 { width:40px; height:24px; background-image:url('../images/btn_img.png'); background-position:-95px -460px; text-indent:-9999px; overflow:hidden; display:inline-block; }
+        .list_tap_menu li.ct8:hover {background-image:url('../images/btn_img.png'); background-position:-184px -460px;  }
+        
+        .content .news { position:absolute; top:50%; width:100%; margin-top:-322px;} 
+        .news .news_content { margin:0 auto; width:1003px; height:560px; background-image:url(../images/news_bg.png); background-repeat:no-repeat; background-position:36px 0; }
+        .news .news_content .news_content_1 { width:900px; height:540px; margin:0 51.5px;  }
+        .news_content_1 .news_header { margin:0 auto 20px; width:840px; height:55px; padding:20px 0 33px; border-bottom:3px solid #777; }
+        .news_header .h_logo { width:260px; height:55px; float:left;}
+        .news_header .h_bn { width:468px; height:60px; float:right; margin-top:20px;}
+        .news_header .h_button  {width:264px; height:23px; clear:left; padding-top:2px; display:inline-block;}
+        .news_header .h_button .button_1 { width:66px; height:22px; display:inline-block; background-image:url('../images/btn_img.png'); background-position:-187px -199px; overflow:hidden; text-indent:-999px; }
+        .news_header .h_button .button_2 { width:75px; height:22px; display:inline-block; background-image:url('../images/btn_img.png'); margin-left:-3px; background-position:-293px -174px; overflow:hidden; text-indent:-999px; }
+        .news_header .h_button .button_3 { width:28px; height:22px; display:inline-block; background-image:url('../images/btn_img.png'); margin-left:-3px; background-position:-500px -270px; overflow:hidden; text-indent:-999px; }
+        .news_header .h_button p { display:inline-block; font-size:11px; vertical-align:text-top;}
+        .news_header .h_button a { display:list-item;}
+        
+        
+        .news_content_1 .news_contents { width:840px; height:380px; margin:0px auto; }
+        .news_contents .left_news_content { width:245px; height:380px; float:left; }
+        .left_news_content ul li.firstli { width:243px; height:265px; border:1px solid #e5e5e5; margin-bottom:9px; }
+        .left_news_content ul li.firstli .left_news_img { width:243px; height:150px;}
+        .left_news_img img { width:243px; height:150px; }
+        .firstli .left_news_text { margin:13px; width:217px; height:88px; overflow:hidden;}
+        .firstli .left_news_text strong {  font-size:15px; font-weight:bold; color:#f00; display:inline-block; }
+        .firstli .left_news_text span {  font-size:12px; font-weight:bold; color:#5e5e5e; display:inline-block; letter-spacing:-1; line-height:15px; }
+        .left_news_content ul li.firstli a:hover strong { color:#000;  }
+        .left_news_content ul li.firstli a:hover span { color:#333;  }
+        
+        .left_news_content ul li.twoli{ width:116px; height:102px; border:1px solid #e4e4e4; float:left;}
+        .left_news_content ul li.twoli span.left_news_img1{ width:116px; height:80px}
+        .left_news_content ul li.twoli span.left_news_img1 img{ width:116px; height:80px; margin-bottom:3px;}
+        .left_news_content ul li span.left_news_text { display:inline-block; width:110px; font-size:11px; color:#666; margin:0 3px; white-space:nowrap; overflow:hidden; letter-spacing:1px; }
+        
+        .left_news_content ul li.threeli{ width:116px; height:102px; border:1px solid #e4e4e4; float:right;}
+        .left_news_content ul li.threeli span.left_news_img1{ width:116px; height:80px}
+        .left_news_content ul li.threeli span.left_news_img1 img{ width:116px; height:80px; margin-bottom:3px;}
+        .left_news_content ul li span.left_news_text { display:inline-block; width:110px; font-size:11px; color:#666; margin:0 3px; white-space:nowrap; overflow:hidden; letter-spacing:1px; }
+        
+        
+        .news_contents .right_news_content { float:right; width:261px; height:380px;  }
+        .right_news_content .rnews1 li { float:left; width:124px; height:110px; border:1px solid #000; background-color:#000; overflow:hidden; }
+        .rnews1 li.rnews1_1 { margin:0 9px 9px 0;}
+        .rnews1 li.rnews1_2 { margin:0 0px 9px 0;}
+        .rnews1 li.rnews1_3 { margin:0 9px 9px 0;}
+        .rnews1 li.rnews1_4 { margin:0 0px 9px 0;}
+        .right_news_content .rnews1 li a span.news_img { width:100%; height:75px; display:block;  }
+        .right_news_content .rnews1 li a:hover span.news_text{ color:#fff;  }
+        .right_news_content .rnews1 li a span.news_img img { width:100%; height:75px; display:block; }
+        .right_news_content .rnews1 li a span.news_text { width:124px; height:36px; font-size:11px; color:#5e5e5e; text-align:center; vertical-align:middle; clear:both; display:table-cell; }
+        
+        .right_news_content .rnews2 li { float:left; width:124px; height:138px; border:1px solid #e5e5e5;  overflow:hidden;  }
+        .rnews2 li.rnews2_1 { margin:0 9px 9px 0;}
+        .right_news_content .rnews2 li a span.news_img { width:100%; height:75px; display:block;  margin-bottom:7px;}
+        .right_news_content .rnews2 li a:hover span.news_text{ color:#333;  }
+        .right_news_content .rnews2 li a span.news_img img { width:100%; height:75px; display:block;}
+        .right_news_content .rnews2 li a span.news_text { width:124px; height:36px; font-size:12px; color:#5e5e5e; line-height:15px; font-weight:bold; text-align:center; vertical-align:middle; clear:both; display:table-cell; letter-spacing:-1px; }
+        
+        .news_contents .center_news_content { width:315px; height:380px; margin-left:254px;   }
+        .center_news_content ul li.c_firstli { width:315px; height:78px; border:1px solid #e5e5e5; overflow:hidden; margin-bottom:9px; }
+        .center_news_content ul li.c_firstli .news_img {float:left; width:105px; height:78px; margin-right:13px; display:inline-block; }
+        .center_news_content ul li.c_firstli .news_img img {width:105px; height:78px; }
+        .center_news_content ul li.c_firstli strong { font-size:14px; display:block; margin-bottom:4px; line-height:16px; margin-top:7px; }
+        .center_news_content ul li.c_firstli .news_text { font-size:11px; display:block; color:#666; line-height:16px; }
+        
+        .center_news_content ul li.c_towli { width:315px; height:78px; border:1px solid #e5e5e5; overflow:hidden; margin-bottom:9px;}
+        .center_news_content ul li.c_towli p { width:285px; height:66px; margin:7px 12px; }
+        .center_news_content ul li.c_towli strong { font-size:15px; display:inline-block; line-height:16px; }
+        .center_news_content ul li.c_towli .news_text { height:40px; font-size:11px; color:#666; line-height:14px; display:inline-block;}
+        
+        .center_news_content ul li.c_threeli { width:307px; height:192px; border:1px solid #e5e5e5; overflow:hidden; padding:4px 4px;}
+        .center_news_content ul li.c_threeli ul li{ width:307px; height:21px; border-top:1px solid #666; margin-top:6px;  }
+        .center_news_content ul li.c_threeli ul li:first-child { border-top:0px; margin-top:0px; }
+        
+        
+        .footer {width:auto; height:81px; background-image:url('../images/footer_bg.png'); background-repeat:repeat-x; }
         
     </style>
 </head>
@@ -109,6 +200,125 @@
                         <a href="#">지역</a>
                     </li>
                 </ul>
+            </div>
+            <div class="news">
+                <div class="news_content">
+                    <div class="news_content_1">
+                        <div class="news_header">
+                            <div class="h_logo"><img src="http://static.naver.net/newsstand/up/2015/0721/nsd134450191.png" alt="디지털타임스"/></div>
+                            <div class="h_bn"><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01446516899395.jpg" alt="광고 입니다." /></div>
+                            <div class="h_button">
+                                <span class="button_1"><a href="#">구독하기</a></span>
+                                <span class="button_2"><a href="#">이용자 한마디</a></span>
+                                <span class="button_3"><a href="#">소셜보내기</a></span>
+                                <p>06-03 15:28편집</p>
+                            </div>
+                        </div>
+                        
+                        <div class="news_contents">
+                            <div class="left_news_content">
+                                <ul>
+                                    <li class="firstli">
+                                        <a href="#">
+                                            <span class="left_news_img"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/001.jpg" alt=""/></span>
+                                            <p class="left_news_text">
+                                                <strong>줄기세포 주입 뇌졸중 환자 "마비가 사라졌다" 놀라워</strong>
+                                                <span>기증된 골수줄기세포가 뇌에 직접 주입된 만성 마비 뇌졸중 환자들이 단기간에 마비가 사라지는 등 놀라운 효과가 나타나 미국의 신경과학계를 흥분시키고 있다고 워싱턴 포스트 인터넷판 등이 2일 보도했다.스탠퍼드 대학 의과...</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="twoli">
+                                        <a href="#">
+                                            <span class="left_news_img1"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/002.jpg" alt="" /></span>
+                                            <span class="left_news_text">공군, `가상현실(VR)` 장비로 범죄예방 교육한다</span>
+                                        </a>
+                                    </li>
+                                    <li class="threeli">
+                                          <a href="#">
+                                            <span class="left_news_img1"><img src="http://static.naver.net/newsstand/2016/0603/dt/183210/003.jpg" alt="" /></span>
+                                            <span class="left_news_text">공군, `가상현실(VR)` 장비로 범죄예방 교육한다</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="right_news_content">
+                                <ul class="rnews1">
+                                    <li class="rnews1_1">
+                                       <a href="#">
+                                            <span class="news_img"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/005.jpg" alt=""/></span>
+                                            <span class="news_text">‘타격 폭발’ 박병호, MLB 데뷔 첫 3안타에 4출루</span>
+                                        </a>
+                                    </li>
+                                    <li class="rnews1_2">
+                                        <a href="">
+                                            <span class="news_img"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/006.jpg" alt=""/></span>
+                                            <span class="news_text">‘시애틀의 영웅’ 이대호, 시즌 8호 홈런 포함 3안타</span>
+                                        </a>
+                                    </li>
+                                    <li class="rnews1_3">
+                                       <a href="">
+                                            <span class="news_img"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/007.jpg" alt=""/></span>
+                                            <span class="news_text">젤리피쉬 “김세정 솔로데뷔? 사실무근…I.O.I에 최</span>
+                                        </a>
+                                    </li>
+                                    <li class="rnews1_4">
+                                        <a href="">
+                                            <span class="news_img"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/008.jpg" alt=""/></span>
+                                            <span class="news_text">윤정수X김숙, 3일 트로트곡 ‘너만 잘났냐’ 공</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="rnews2">
+                                    <li class="rnews2_1">
+                                        <a href="">
+                                            <span class="news_img"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/009.jpg" alt=""/></span>
+                                            <span class="news_text">의료기기 `클라우드` 기술로 금맥 캔다</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="news_img"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/010.jpg" alt=""/></span>
+                                            <span class="news_text">‘해피투게더3’ 전소미부터 악동뮤지션·이동준까지 ‘예능가족’</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="center_news_content">
+                                <ul>
+                                    <li class="c_firstli">
+                                        <a href="#">
+                                        <span class="news_img"><img src="http://static.naver.net/newsstand/2016/0603/dt/163806/005.jpg" alt=""/></span>
+                                        <strong>줄기세포 주입 뇌졸중 환자 "마비 사라졌다" 놀라운 효과</strong>
+                                        <span class="news_text">기증된 골수줄기세포가 뇌에 직접 주입된 만성 마비 뇌졸중 환자들이 단기간에 마비가 사라지는 ..</span>
+                                        </a>
+                                    </li>
+                                    <li class="c_towli">
+                                        <a href="">
+                                            <p>
+                                            <strong>배기가스 조작 `폭스바겐` 전기차 배터리로 이미지 변신?</strong>
+                                            <span class="news_text">[디지털타임스 노재웅 기자] 폭스바겐이 디젤차 배기가스 저감장치 조작사태로 훼손된 브랜드 친환경 이미지 회복을</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="c_threeli">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
