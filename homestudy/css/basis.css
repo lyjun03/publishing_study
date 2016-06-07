@@ -17,7 +17,7 @@ body,input,select,textarea,td,th,p,div,h1,h2,h3,h4,h5,h6,ul,li,dt,dd,a,span,form
 body,h1,h2,h3,h4,h5,h6,p,ul,li,dt,dl,a,img, input, table, td, tr, th{margin:0; padding:0;}
 a{text-decoration:none; color:inherit; display:inline-block;  cursor:pointer;}
 a:link, a:visited, a:active{text-decoration:none;}
-ul, dl{list-style:none;}
+ul, dl, ol{list-style:none;}
 img, input, select{border:none; vertical-align:middle;}
 
 .clearfix{zoom:1}
