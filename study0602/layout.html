@@ -39,8 +39,8 @@
         .content_title {width:0px; height:0px; overflow:hidden;}
         
         .content .tapmenu { position:absolute; top;0px; height:28px;  width:100%; }
-        .tapmenu ul { margin:0px auto; width:500px; height:24px;}
-        .tapmenu ul.list_tap_menu li { float:left; display:list-item;}
+        .tapmenu ul { margin:0px auto; width:100%; height:24px; text-align:center;}
+        .tapmenu ul.list_tap_menu li { display:inline-block; }
         .list_tap_menu li a{ cursor:auto; display:block;}
         
         .list_tap_menu li.ct1 { width:72px; height:24px; background-image:url('../images/btn_img.png'); background-position:-100px -252px; text-indent:-9999px; overflow:hidden; display:inline-block; }
@@ -67,7 +67,9 @@
         .list_tap_menu li.ct8:hover {background-image:url('../images/btn_img.png'); background-position:-184px -460px;  }
         
         .content .news { position:absolute; top:50%; width:100%; margin-top:-322px;} 
-        .news .news_content { margin:0 auto; width:1003px; height:560px; background-image:url(../images/news_bg.png); background-repeat:no-repeat; background-position:36px 0; }
+        .news .news_content { margin:0 auto; width:1003px; height:560px; position:relative; background-image:url(../images/news_bg.png); background-repeat:no-repeat; background-position:36px 0; }
+        .news .news_content .prev_arrow {position:absolute; outline:1px solid#f00; width:59px; height:82px; top:50%; margin-top:-41px; }
+        .news .news_content .next_arrow {position:absolute; outline:1px solid#f00; width:59px; height:82px; top:50%; right:0px; margin-top:-41px; }
         .news .news_content .news_content_1 { width:900px; height:540px; margin:0 51.5px;  }
         .news_content_1 .news_header { margin:0 auto 20px; width:840px; height:55px; padding:20px 0 33px; border-bottom:3px solid #777; }
         .news_header .h_logo { width:260px; height:55px; float:left;}
@@ -132,9 +134,10 @@
         .center_news_content ul li.c_towli strong { font-size:15px; display:inline-block; line-height:16px; }
         .center_news_content ul li.c_towli .news_text { height:40px; font-size:11px; color:#666; line-height:14px; display:inline-block;}
         
-        .center_news_content ul li.c_threeli { width:307px; height:192px; border:1px solid #e5e5e5; overflow:hidden; padding:4px 4px;}
-        .center_news_content ul li.c_threeli ul li{ width:307px; height:21px; border-top:1px solid #666; margin-top:6px;  }
-        .center_news_content ul li.c_threeli ul li:first-child { border-top:0px; margin-top:0px; }
+        .center_news_content ul li.c_threeli { width:305px; height:192px; border:1px solid #e5e5e5; overflow:hidden; padding:4px 4px;}
+        .center_news_content ul li.c_threeli { font-size:12px; font-weight:bold; }
+        .center_news_content ul li.c_threeli ul li{ width:300px; margin-top:6px; padding-left:5px; height:21px; border-top:1px solid #666; }
+        .center_news_content ul li.c_threeli ul li:first-child { border-top:0px; }
         
         
         .footer {width:auto; height:81px; background-image:url('../images/footer_bg.png'); background-repeat:repeat-x; }
@@ -203,6 +206,8 @@
             </div>
             <div class="news">
                 <div class="news_content">
+                    <div class="prev_arrow"><a href=""><span></span></a></div>
+                    <div class="next_arrow"><a href=""><span></span></a></div>
                     <div class="news_content_1">
                         <div class="news_header">
                             <div class="h_logo"><img src="http://static.naver.net/newsstand/up/2015/0721/nsd134450191.png" alt="디지털타임스"/></div>
@@ -304,7 +309,7 @@
                                     </li>
                                     <li class="c_threeli">
                                         <ul>
-                                            <li></li>
+                                            <li><a href="">· “양판점에서는 안팔아요”… 삼성 세리프TV는 왜?</a></li>
                                             <li></li>
                                             <li></li>
                                             <li></li>
