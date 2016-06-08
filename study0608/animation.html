@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin:0; padding:0;}
+        body { background-color:#e5e5e5; }
+        .wrap { width:500px; height:500px; background-color:#000; margin:0 auto; position:relative;}
+        .wrap .box1 { width:100px; height:100px; background-color:#fff; position:absolute; top:10px; left:10px; animation:box1 infinite 2000ms; }
+        .wrap .box2 { width:100px; height:250px; background-color:#fff; position:absolute; top:120px; left:10px; animation:box2 infinite  2000ms; } 
+        .wrap .box3 { width:100px; height:110px; background-color:#00f; position:absolute; bottom:10px; left:10px; animation:box3 infinite  2000ms;}
+        .wrap .box4 { width:370px; height:360px; background-color:#f00; position:absolute; top:10px; right:10px; animation:box4 infinite  2000ms;}
+        .wrap .box5 { width:310px; height:110px; background-color:#fff; position:absolute; bottom:10px; left:120px; animation:box5 infinite  2000ms;}
+        .wrap .box6 { width:50px; height:50px; background-color:#fff; position:absolute; bottom:70px; right:10px; animation:box6 infinite  2000ms;}
+        .wrap .box7 { width:50px; height:50px; background-color:#ff0; position:absolute; bottom:10px; right:10px; animation:box7 infinite  2000ms; }
+        
+      
+        @keyframes box1 {
+            from { margin-left:0px; }
+            to { margin-left:550px;  background-color:#000;  transform:rotateY(-180deg);}
+        }
+        @keyframes box2 {
+            from { margin-top:120px; background-color:#fff;}
+            to { margin-top:550px; background-color:#000; transform:rotateX(180deg) }
+        }
+        
+        @keyframes box3 {
+            from { margin-bottom:10px; }
+            to { margin-bottom:500px;  background-color:#000;}
+        }
+        
+         @keyframes box4 {
+            from { margin-right:0px; background-color:#f00;}
+            to { margin-right:550px; background-color:#000;  transform:rotate(90deg)}
+            
+        }
+        @keyframes box5 {
+            from { margin-bottom:10px; }
+            to { margin-bottom:-300px; background-color:#000; }
+            
+        }
+        @keyframes box6 {
+            from { margin-right:10px; }
+            to { margin-right:-550px; background-color:#000; transform:scale(2,2) }
+            
+        }
+         @keyframes box7 {
+            from { margin-right:10px; }
+            to { margin-right:550px; background-color:#000; transform:scale(2.5,2.5) }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        infinite:무한반복 alternate: 왓다가 돌아가기
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twice</title>
+    <style>
+        *{margin:0; padding:0; }
+        html,body { height:100%;}
+        ul,ol { list-style:none; }
+        
+        .wrapper { height:100%; background-image:url('twice/main_img.jpg'); background-repeat:no-repeat; background-size:cover; background-position:top center}
+        .wrapper .header { height:100px; background-color:rgba(255,255,255,0.7); width:100%; position:fixed; left:0; top:0; padding:0 30px; box-sizing:border-box; box-shadow:0 2px 5px rgba(0,0,0,0.3); transition:1s;}
+        .wrapper .mark a { display:block; width:104px; height:40px; padding:25px; background-image:url(twice/logo-s.png); background-repeat:no-repeat; background-position:center; transition:1s; }
+        .wrapper .mark a:hover { transform:rotateY(180deg); }
+        
+        .wrapper .logo { width:350px; height:350px; transform:scale(0.9,0.9); background-image:url(twice/mainlogo.png); position:absolute; top:35%;}
+        .wrapper .logo:hover { transform:scale(1.2,1.2); transition:1s; opacity:0;}
+        
+        
+        @media screen and (max-width:768px){ 
+            
+            .wrapper { background-image:url('twice/main_img2.jpg');  background-position:center center; }
+            .wrapper .logo { position:relative; margin:0 auto; top:10%; transition:1s; transform:scale(0.7,0.7); }
+            .wrapper .header { height:40px; padding:0px; background-color:#fff; }
+            .wrapper .header .mark a {padding:0; width:60px; height:30px; margin-top:5px; background-position:50% 50%; background-size:cover; transition:1s; transform:rotateY(360deg);  }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="header">
+            <div class="mark">
+                <a href=""></a>
+            </div>
+        </div>
+        
+        <div class="logo"></div>
+    </div>
+</body>
+</html>

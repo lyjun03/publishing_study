@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{margin:0; padding:0;}
+        .box { width:100px; height:100px; border:1px solid #f00; background-color:#000; transition:width 1000ms cubic-bezier(1,-0.55, 0, 1.57) 1000ms; }
+        .box:hover { background-color:#f00; width:300px; }
+        div p{ font-size:14px; line-height:170%;}
+      
+      
+      
+        @-webkit-keyframes identifier {
+            from {  }
+            to {  }
+        }
+        @-o-keyframes identifier {
+            from {  }
+            to {  }
+        }
+        @-moz-keyframes identifier {
+            from {  }
+            to {  }
+        }
+        @keyframes identifier {
+            from {  }
+            to {  }
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div>
+        <p>transition:width 1000ms, height 1000ms 가로와 세로값만 적용</p>
+        <p>ease= 개발자도구에 에니메이션 움직임을 조절할수 있는 창이 뜬다</p>
+    </div>
+</body>
+</html>
