@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Twice</title>
+    <link rel="stylesheet" href="font_icon/font/flaticon.css" type="text/css" />
     <style>
         *{margin:0; padding:0; }
         html,body { height:100%;}
@@ -18,12 +19,18 @@
         .wrapper .header .nav ul { font-size:0px; }
         .wrapper .header .nav ul li { display:inline-block; font-size:14px; line-height:100px; vertical-align:top; }
         .wrapper .header .nav ul li a { padding:0 20px; display:block; transition:0.3s; text-decoration:none; font-size:16px; font-weight:bold; color:#009ac1; }
-        .wrapper .header .nav ul li a:hover { border-top:4px solid #ff5a5a; background-color:#fff; font-size:16px font-weight:bold; color:#ff5a5a; }
+        .wrapper .header .nav ul li a:hover { border-top:4px solid #ff5a5a; background-color:#fff; font-size:16px; color:#ff5a5a;}
         .wrapper .header .nav button { display:none; }
         
         .wrapper .logo { width:350px; height:350px; transform:scale(0.9,0.9); background-image:url(twice/mainlogo.png); position:absolute; top:35%;}
         .wrapper .logo:hover { transform:scale(1.2,1.2); transition:1s; opacity:0;}
         
+        .wrapper .footer{position:fixed; bottom:0; width:100%; height:57px;  }
+        .wrapper .footer .footer_logo a { position:relative; left:7%; top:5px; background-image:url('twice/jyplogo-b.png');width:115px; height:45px; display:block; float:left; text-indent:-9999px; z-index:1; }
+        .wrapper .footer .sns { position:relative; right:3%; top:15px; float:right;}
+        .wrapper .footer .sns a { text-decoration:none; float:right; display:block; }
+        .sns span:before { font-size:30px; background-repeat:repeat; color:#333; margin-left:0px; margin-right:10px; }
+       
         
         @media screen and (max-width:768px){ 
             
@@ -37,6 +44,9 @@
             .wrapper .header .nav ul:hover { display:block; }
             .wrapper .header .nav ul li { line-height:40px; display:block; width:200px; }
             .wrapper .header .nav ul li a:hover { border-top:0px none; border-left:4px solid #009ac1; }
+            
+            .wrapper .footer {background-color:rgba(0,0,0,0.5); position:fixed; bottom:0; width:100%; height:57px; transition:1s; }
+            .sns span:before { font-size:30px; background-repeat:repeat; color:#fff; margin-left:0px; margin-right:10px; transition:1s; }
         }
         
     </style>
@@ -62,6 +72,18 @@
         </div>
         
         <div class="logo"></div>
+        
+        <div class="footer">
+            <div class="footer_logo">
+                <a href="">JYP Entertainment</a>
+            </div>
+            <div class="sns">
+                <a href="#" ><span class="flaticon-twitter-logo"></span></a>
+                
+                <a href="#" ><span class="flaticon-instagram-social-network-logo-of-photo-camera"></span></a>
+                <a href="#" ><span class="flaticon-facebook-logo"></span></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

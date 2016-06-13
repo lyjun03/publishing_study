@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+}
+/*html,body end*/
+.wrapper {
+  height: 100%;
+  background-image: url("../images/main_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+/*wrapper end*/
+.header {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+  /*logo end*/
+  /*nav end */
+}
+.header .logo a {
+  display: block;
+  background-image: url("../images/logo-s.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 104px;
+  height: 52px;
+  padding: 25px;
+  float: left;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+}
+.header .logo a:hover {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+.header .nav {
+  float: right;
+  /*.nav > ul end */
+}
+.header .nav ul {
+  font-size: 0px;
+  /*.nav > ul > li  end */
+  /*.nav > ul > li > a end */
+}
+.header .nav ul li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.header .nav ul li:hover a {
+  background-color: #fff;
+  color: #3F3F3F;
+  border-top: 4px solid #3F3F3F;
+}
+.header .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 42px 18px;
+  box-sizing: border-box;
+  clear: both;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+/*header end*/
+/* --------------------------------------------------------------------- header ------------------------------------------------------------------------------------------ */
+.content {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 35%;
+  background-image: url("../images/mainlogo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: scale(0.9, 0.9);
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+}
+.content:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+}
+/* content end */
+.footer {
+  width: 100%;
+  height: 57px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* footer>.f_logo end */
+}
+.footer .f_logo {
+  position: relative;
+  top: 5px;
+  left: 7%;
+  width: 115px;
+  height: 45px;
+  background-image: url("../images/jyplogo-b.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+/* footer end */
