@@ -4,6 +4,9 @@
 @fR:right;
 @fL:left;
 
+.padding1(){
+    position:relative; top:5px; left:7%; width:115px; height:45px; background-image:url("@{imgurl}jyplogo-b.png"); background-repeat:no-repeat; display:block;
+}
 .transition(@second,@ease:ease){
     -webkit-transition:@second @ease;
     -moz-transition:@second @ease;
@@ -59,7 +62,7 @@ html,body{
                 &:hover a{ background-color:@basecolor; color:@basecolor_1; border-top:4px solid @basecolor_1;  }
             }/*.nav > ul > li  end */
             li a{ 
-                color:@basecolor; text-decoration:none;  font-weight:bold; display:block;  padding:42px 18px; box-sizing:border-box; clear:both; .transition(0.2s);
+                color:@basecolor; text-decoration:none;  font-weight:bold; display:block;   box-sizing:border-box; clear:both; .transition(0.2s); 
             }/*.nav > ul > li > a end */
                     
         }/*.nav > ul end */
@@ -81,7 +84,7 @@ html,body{
     width:100%; height:57px; position:fixed; bottom:0; background-color:rgba(0,0,0,0.5);
              
     .f_logo{
-        position:relative; top:5px; left:7%; width:115px; height:45px; background-image:url("@{imgurl}jyplogo-b.png"); background-repeat:no-repeat; display:block;
+        .padding1();
     }/* footer>.f_logo end */
              
 }/* footer end */
