@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  height: 100%;
+}
+.toolbar {
+  background-color: #f5f5f5;
+  min-height: 40px;
+  /*container end*/
+  /*toolbar_lang */
+}
+.toolbar .container {
+  height: 40px;
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+  outline: 1px solid #f00;
+  line-height: 40px;
+  /*loginbox end*/
+}
+.toolbar .container .loginbox {
+  float: left;
+  font-size: 11px;
+  color: #777777;
+}
+.toolbar .container .loginbox b {
+  display: inline-block;
+  margin: 0 5px;
+}
+.toolbar .container .loginbox a {
+  color: #777777;
+}
+.toolbar .container .loginbox a:hover a {
+  color: #333333;
+}
+.toolbar .toolbar_lang {
+  width: 100%;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  text-align: center;
+}
+.toolbar .toolbar_lang ul {
+  text-align: center;
+}
+.toolbar .toolbar_lang ul li {
+  width: 20px;
+  margin: 0 5px;
+  display: inline-block;
+}
+.toolbar .toolbar_lang ul li img {
+  max-width: 100%;
+}
+.toolbar .toolbar_sns {
+  float: right;
+}
+.toolbar .toolbar_sns ul li {
+  width: 40px;
+  height: 40px;
+  display: block;
+  float: left;
+}
+.toolbar .toolbar_sns ul li i:before {
+  color: #a5a5a5;
+  font-size: 20px;
+  display: inline-block;
+}
+/*toolbar end*/
+.header {
+  width: 100%;
+}
